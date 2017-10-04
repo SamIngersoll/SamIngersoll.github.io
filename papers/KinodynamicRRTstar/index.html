@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <title>Kinodynamic RRT*: Asymptotically Optimal Motion Planning for Robots with Linear Dynamics</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+<div class="text">
+  <h1>Kinodynamic RRT*: Asymptotically Optimal Motion Planning for Robots with Linear Dynamics</h1>
+  <i class="bib">D. J. Webb and J van den Berg. (2013). Kinodynamic RRT*: Asymptotically Optimal Motion Planning for Robots with Linear Dynamics. 2013 IEEE International Conference on Robotics and Automation (ICRA).</i>
+  <h3>What problem does the paper solve and why is this interesting?</h3>
+  Webb and van den Berg present a motion planning algorithm called Kinodynamic RRT*, a variant of RRT* that is asymptotically optimal for kinodynamic systems with controllable linear dynamics. Previous attempts at implementing RRT* in kinodynamic systems worked only for very simple systems or only utilized constant control input – leading to bounded suboptimal trajectories. Kinodynamic RRT* can also be used to control nonlinear systems by linearizing their dynamics. This approximation is only valid for control actions between relatively close states. Initially, the more sparse state tree will have long edges and the linearization will be highly innacurate but as the state space is more densely sampled, the edges of the tree shorten and the linearization becomes more accurate. Convergence cannot yet be guaranteed in nonlinear systems. Kinodynamic RRT* works especially well in systems with nilpotent dynamics matrices.
+  <br><br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/TUZ_VzwB6ho?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  <h3>How do they solve this problem?</h3>
+  Kinodynamic RRT* functions as follows: first, a state in free space is sampled. Second, the group of nodes within the neighbor radius \(r\), given by \(c^*[x,x_i] < r \) is found and the neighbor with the least costly, collision free path is selected to be the parent. Finally, a search is done of nodes within the neighbor radius to see if any are on a cheaper path from the root, if so, this node replaces the previous parent. Rewiring is done if needed. 
+  <br><br>
+  Kinodynamic RRT* differs from traditional RRT* in that the goal state must be reached exactly, rather than just a goal region. In order to accomplish this, the goal state is explicitly added to the set of states considered for forward connection in the second step of the algorithm (even if the goal state is not already a part of the tree). In addition, Kinodynamic RRT* does not use a steering function because the formulation makes partial trajectories hard to calculate, instead a full connection is drawn to the newly sampled point.
+  <br><br>
+  Kinodynamic RRT* utilize a fixed-final-state-free-final-time controller to optimally connect any pair of states. Webb and van den Berg use a cost function that penalizes control effort and duration of trajectory. The controller is extended from a fixed-final-state-fixed-time controller which is known to give the optimal control policy between two states for a given duration. The zeros of the derivative of this controller with respect to time corresponding to the minimum cost will be the optimal time.
+  <br><br>
+In traditional RRT*, neighbor radius can be decreased with increasing samples according to a specific scheme without sacrificing optimality. Kinodynamic RRT* is similar, but a new scheme is developed because the space in non-Euclidian.   
+  <h3>How did they test their solution?</h3>
+  Kinodynamic RRT* was tested in three systems: a linear double integrator model with a 4D state vector, a nonlinear quadcopter model with a 10D state vector, and a nonlinear car-like model with a 5D state vector. The algorithm was able to identify the optimal path in each case and always selected the correct path even when multiple homotopy classes existed.  
+  <h3>Future work and questions</h3>
+  Is it possible to prove that this algorithm will converge on certain kinds of nonlinear systems?
+  <br><br>
+  Are the forward and backward reachable sets in state space really always ellipsoids? That doesn't make sense. Looks like this may only be true for the type of linearized dynamics that are used in this paper.
+  <br><br>
+  Can some sort of dimensionality reduction scheme be used on state variables in order to simplify the state space? Would this be valuable?
+  <br><br>
+  Future work includes implementation and testing on hardware, further computational optimization, and the incorporation of some useful heuristics. Maybe also nonlinear sampling. 
+  <br><br>
+      October 3, 2017
+      <br>
+      Sam Ingersoll
+    <br><br>
+    <h3>Definitions</h3>
+    <b>Homotopy</b>:
+    <br><br>
+    <b>Asymptotically optimal</b>: the optimal solution will be found with a probability approaching one as algorithm iterations approach infinity.
+    <br><br>
+    <b>Probabalistically complete</b>: a solution will be found (if one exists) with a probability approaching one as algorithm iterations approach infinity.
+    <br><br>
+    <b>Holonomic</b>: If all degrees of freedom are controllable.
+    <br><br>
+    <b>Nilpotent</b>: When a matrix to a power approaches zero.
+    <br><br>
+    <b>PSPACE-hard</b>:
+    <br><br>
+    <b>Two point boundary value problem</b>: Using two points to get the unique solution to a differential equation.
+    <br><br>
+    <b>PRM (Probabalistic Road Maps)</b>:
+    <br><br>
+    <b>Resolution complete</b>:
+    <br><br>
+    <b>Double integrator dynamics</b>:
+    <br><br>
+    <b>Gramian (weighted controllability Gramian)</b>:
+    <br><br>
+    <b>Optimal substructure property</b>: the property that the optimal trajectory between two states \( \pi^*[x_0, x_1] \) is the concatenation of the optimal trajectories between a series of successive states \((x_0, ..., x_1)\) in free space.
+  </div>
+
+</body>
+
