@@ -10,26 +10,28 @@
 <body>
 <div class="text">
   <h1>Robot Build Log</h1>
-  <br>
-  <h3><a href="#Ch1" class="chapter">1. Motors/Motor Control</a></h3>
-  <h3><a href="#Ch2" class="chapter">2. Mechanical Design</a></h3>
-  <h3><a href="#Ch3" class="chapter">3. Fabrication</a></h3>
-  <h3><a href="#Ch4" class="chapter">4. Control</a></h3>
-  <br><br>
-  <h3 id="Ch1">Motors/Motor Control</h3>
-  Brushed DC motors are much easier to control than Brushless, but are usually much less torque dense.
-  <h4>PID Control</h4>
-  <a href="../PID/PID.html">PID controllers</a> are used to control motor speed, position, or torque. They sit on top of other, lower level controllers such as <a href="../motor_control/motor_control.html#FOC">field-oriented control (FOC)</a>, which is used to drive brushless motors.
+  This is a log of me trying to build a robot. 
+  
+  <h3 id="Ch1">Planning</h3>
+  
+  <h4>Nov. 5, 2017</h4>
+  I made a little setup to learn some extremely basic motor control, the goal was to prove that I could do position control on a brushed DC motor.
+  I set up a brushed DC motor using: a <a href="http://wiki.igrebot.fr/index.php?title=Motor_howto#6W_Maxon_DC_motor">Maxon DC motor</a>, a <a href="https://www.pololu.com/product/1451">Pololu motor driver</a>, and an <a href="https://os.mbed.com/platforms/FRDM-K64F/">MBED FRDM board</a>.
+  The setup was very easy to set up and control. I am thinking that it would be fun to use a more torque dense brushless DC motor in the final robot.<br><br>
+  
+  To learn about <a href="../PID/PID.html">PID controllers</a>, I read <i><a href="http://www.wescottdesign.com/articles/pid/pidWithoutAPhd.pdf">PID Without a PhD</a></i>. Wescott describes systems that specifically require P, I, and D terms in order to illustrate where each term would be useful. The following diagram was very useful for understanding and implementing the controller.
   <figure id="PID_diagram">
       <img width=90% src="../images/PID_control_diagram.png"></img>
-      <figcaption>A block diagram from <a href="#TWescottPID">PID Without a Phd</a> representing the PID control loop.</figcaption>
+      <figcaption>A block diagram from <a href="http://www.wescottdesign.com/articles/pid/pidWithoutAPhd.pdf">PID Without a Phd</a> representing the PID control loop.</figcaption>
   </figure>
-  A diagram from Tim Wescott's <i>PID Without A PhD</i> representing the PID control loop is below.
-  <h3 id="Ch2">Mechanical Design</h3>
-  <h3 id="Ch3">Fabrication</h3>
-  <h3 id="Ch4">Control</h3>
 
-  <i class="bib" id="TWescottPID">T. Wescott. (2016). PID Without a PhD. Wescott Design Services.</i>
+  <h4>Nov. 14, 2017</h4>
+  Today I tried to get a brushless DC motor spinning. The setup consists of a <a href="https://hobbyking.com/en_us/turnigy-multistar-4225-390kv-16pole-multi-rotor-outrunner.html">Multistar 390kv</a> 16 pole motor, a <a href="http://www.st.com/en/evaluation-tools/steval-esc001v1.html">STEVAL-ESC001V1</a> speed controller, and an <a href="https://jeelabs.org/book/1547a/">STLink programmer</a> made from a broken STM Nucleo (it required a <a href="http://www.st.com/en/development-tools/stsw-link007.html">firmware update</a>, the correct updater is STLinkUpgrade.jar in the AllPlatforms folder).<br><br>
+  It took me a long time (all day) to get the motor driver set up and spinning the motor. I was following the directions in the <a href="http://www.st.com/content/ccc/resource/technical/document/user_manual/group0/06/a3/c1/ae/7d/27/4c/e0/DM00384353/files/DM00384353.pdf/jcr:content/translations/en.DM00384353.pdf">user manual</a> (also, you need to connect TX and RX pins in the UART block on the motor driver to the TX and RX on the STLink in order for it to work, I didn't know that). I found that the <a href="http://www.st.com/content/ccc/resource/technical/document/data_brief/group1/a6/16/a0/51/cb/9a/45/7d/DM00375469/files/DM00375469.pdf/jcr:content/translations/en.DM00375469.pdf">data brief</a> had useful information about the pinouts that wasn't included in the user manual. Only three IDEs are supported for flashing the motor controller, I tried all three and was only able to make the process work with <a href="http://www.openstm32.org/HomePage">STM Workbench</a>. It is important to also download the <a href="http://www.st.com/en/evaluation-tools/steval-esc001v1.html">motor controller firmware</a>.
+
+  <br><br>
+  <h3>Links and Sources</h3>
+  <i class="bib" id="TWescottPID">T. Wescott. (2016). PID Without a PhD. Wescott Design Services. <a href="http://www.wescottdesign.com/articles/pid/pidWithoutAPhd.pdf">http://www.wescottdesign.com/articles/pid/pidWithoutAPhd.pdf</a>.</i>
 	<br><br>
       November 15, 2017
       <br>
