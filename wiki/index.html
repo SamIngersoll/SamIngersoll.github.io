@@ -18,18 +18,38 @@
   <h3><a href="#Ch3" class="chapter">3. Fabrication</a></h3>
   <h3><a href="#Ch4" class="chapter">4. Control</a></h3>
   <br><br>
-  <h3 id="Ch1">Motors/Motor Control</h3>
-  
-  <a href="./PID/PID.html">PID controllers</a> are used to control motor speed, position, or torque. They sit on top of other, lower level controllers which drive the motor such as <a href="./motor_control/motor_control.html#FOC">field-oriented control (FOC)</a>.
-  <h3 id="Ch2">Mechanical Design</h3>
-  <h3 id="Ch3">Fabrication</h3>
-  <h4 id="Tolerances">Tolerances</h4>
+  <h2 id="Ch1">Motors/Motor Control</h2>
+  <h3>Selecting a motor</h3>
+  <b>Torque (\(\tau\))</b> is proportional to the height of the motor and the radius squared, this is why pancake motors are more torque dense than machines of other shapes.<br><br> 
+  Many motor vendors dont list the torque that a motor can produce. Motors of similar design will have a similar torque density \( \tau_d\)
+  \[ \tau_d = \frac{\tau}{A_{ag} \cdot r_{ag}}\]
+  Where \( A_{ag} \) is the surface area at the airgap and \( r_{ag} \) is the radius at the airgap. \( \tau_d\) can be used to approximate the torque of a given motor based on the known torque of a motor of similar design.<br><br>
+  An 8608 pancake motor that can produce a peak torque of approximately 3Nm would have a \( \tau_d \) equal to 
+  \[ \tau_d = \frac{3Nm}{\pi \cdot 0.86m \cdot 0.08m \cdot 0.43m} = 135.2 \frac{Nm}{m^3} \]
+  We could then multiply \(\tau_d\) by \(A_{ag} \cdot r_{ag}\) of a new motor to get a peak torque estimate for a new motor.<br><br><br>
+  <b>Voltage constant (\(K_V\))</b> describes how the motor spins in relation to voltage provided, it has the units \(\frac{rpm}{V}\).<br> 
+  <b>Torque constant (\(K_T\))</b> describes how much torque the motor produces per amp of current provided, it has the units \(\frac{Nm}{amp}\).<br><br>
+  The voltage and torque constant are related as follows
+  \[ K_T = \frac{60}{2\pi K_V} \]
+  Above we converted \(\frac{rpm}{V}\) to \( \frac{rad}{s \cdot V} \) and took the reciprocal of \(K_V\).<br>
+  \(K_V \cdot K_T = 1 \)
+  <br><br>
+  <h3>Intuition</h3>
+  Normally voltage is thought of as producing force and current is thought of as producing velocity, in a motor, the opposite is true. In an electric motor, current produces torque and voltage produces rpm.
+  <h3>Architectures and applications</h3>
+  Gimball motors have to be smooth, so they generally include higher quality parts (like bearings), they also have low \(K_V\) becuase they are meant to spin slowly.<br><br>
+  RC vehicle motors (generally quadcopters and helicopters) are usually designed to have high voltage constants in order to get more rpm and more lift.
+  <h2 id="Ch2">Mechanical Design</h2>
+  <h3>Fusing</h3>
+  <b>Mechanical fusing:</b> when one part of an assembly is specifically designed to fail first and at a known load. Mechanical fusing can be used to ensure that cheap, easily replaceable parts fail before expensive or hard to replace parts.<br><br> 
+  <b>Clutching:</b> is a nondestructive form of mechanical fusing where at a known load, slipping occurs to prevent failure. When the load is reduced below the threshold the slipping stops.
+  <h2 id="Ch3">Fabrication</h2>
+  <h3 id="Tolerances">Tolerances</h3>
   <b>3D printer</b>: holes will shrink in diameter by 0.01in. Leave an additional 0.005in for a good press fit.
-  <h3 id="Ch4">Control</h3>
+  <h2 id="Ch4">Control</h2>
 
-  <i class="bib" id="TWescottPID">T. Wescott. (2016). PID Without a PhD. Wescott Design Services.</i>
 	<br><br>
-      November 15, 2017
+      January 7, 2017
       <br>
       Sam Ingersoll
   </div>
