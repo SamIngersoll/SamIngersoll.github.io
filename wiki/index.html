@@ -13,13 +13,25 @@
   <br>
   <a href="./class_notes/class_notes.html">Class notes</a><br>
   <a href="./build_log/build_log.html">Robot build log</a><br>
-  <h3><a href="#Ch1" class="chapter">1. Motors/Motor Control</a></h3>
-  <h3><a href="#Ch2" class="chapter">2. Mechanical Design</a></h3>
-  <h3><a href="#Ch3" class="chapter">3. Fabrication</a></h3>
-  <h3><a href="#Ch4" class="chapter">4. Control</a></h3>
+  <h3><a href="#Ch1" class="chapter">Motors/Motor Control</a></h3>
+  <h3><a href="#Ch2" class="chapter">Mechanical Design</a></h3>
+  <h3><a href="#Ch3" class="chapter">Fabrication</a></h3>
+  <h3><a href="#Ch4" class="chapter">Control</a></h3>
   <br><br>
   <h2 id="Ch1">Motors/Motor Control</h2>
   <h3>Selecting a motor</h3>
+  Motors define the capabilities of robots, selecting the right motors can be a daunting task, here are some of the tips and tricks that have helped me.<br><br>
+  <b>How to look at a motor listing</b><br>
+  Here's a listing for a gimball motor from HobbyKing:<br><br>
+  <table>
+      <tr>
+          <td><img src="./images/motor_listing_1.png" width="80%"></img></td>
+          <td><img src="./images/motor_listing_2.png" width="140%"></img></td>
+      </tr>
+  </table>
+  <br><br>
+  The name of the motor is "GM6808D Hollow Shaft 12.7mm Brushless Gimbal Motor" where the 6808 corresponds to an airgap diameter of 68mm and a height of 8mm (the airgap is the space between the rotor and the stator). 
+  <br><br>
   <b>Torque (\(\tau\))</b> is proportional to the height of the motor and the radius squared, this is why pancake motors are more torque dense than machines of other shapes.<br><br> 
   Many motor vendors dont list the torque that a motor can produce. Motors of similar design will have a similar torque density \( \tau_d\)
   \[ \tau_d = \frac{\tau}{A_{ag} \cdot r_{ag}}\]
@@ -32,7 +44,8 @@
   The voltage and torque constant are related as follows
   \[ K_T = \frac{60}{2\pi K_V} \]
   Above we converted \(\frac{rpm}{V}\) to \( \frac{rad}{s \cdot V} \) and took the reciprocal of \(K_V\).<br>
-  \(K_V \cdot K_T = 1 \)
+  \(K_V \cdot K_T = 1 \).<br><br>
+  It is important that the motor you select has a high enought torque constant (which means a relatively low voltage constant) to ensure that you can get enough torque with the current you can provide. It is also important to ensure that your voltage constant is high enough that you can get enough rpm with the voltage you can provide. For direct drive situations, it is unlikely that the voltage constant of a hobbyist motor will be too high, but if the motor is geared, it is important to ensure that the motor will be able to spin fast enough to achieve the desired motion.
   <br><br>
   <h3>Intuition</h3>
   Normally voltage is thought of as producing force and current is thought of as producing velocity, in a motor, the opposite is true. In an electric motor, current produces torque and voltage produces rpm.
@@ -45,7 +58,7 @@
   <b>Clutching:</b> is a nondestructive form of mechanical fusing where at a known load, slipping occurs to prevent failure. When the load is reduced below the threshold the slipping stops.
   <h2 id="Ch3">Fabrication</h2>
   <h3 id="Tolerances">Tolerances</h3>
-  <b>3D printer</b>: holes will shrink in diameter by 0.01in. Leave an additional 0.005in for a good press fit.
+  <b>3D printer</b>: holes will shrink in diameter by 0.254mm (0.01in). Add 0.127mm (0.005in) in tolerance for a good press fit.
   <h2 id="Ch4">Control</h2>
 
 	<br><br>
