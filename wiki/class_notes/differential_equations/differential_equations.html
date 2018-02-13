@@ -10,18 +10,48 @@
 <body>
 <div class="text">
   <h1>18.03 Differential Equations</h1>
-  <br>
-  <h3><a href="#Ch1" class="chapter">First Order Differential Equations</a></h3>
-  The solution to a differential equation is a function or class of functions.
-  <h3><a href="#Ch2" class="chapter">Second Order Linear Equations</a></h3>
-  <h3><a href="#Ch3" class="chapter">Laplace Transform</a></h3>
-  <br><br>
-  <h3 id="Ch1">First Order Differential Equations</h3>
-  
-  <h3 id="Ch2">Second Order linear Equations</h3>
-  <h3 id="Ch3">Laplace Transform</h3>
+  <h2><a href="#Ch1" class="chapter">First Order Differential Equations</a></h2>
 
-  <i class="bib" id="Khan">Khan Academy.</i>
+  <h2><a href="#Ch2" class="chapter">Second Order Linear Equations</a></h2>
+  <h2><a href="#Ch3" class="chapter">Laplace Transform</a></h2>
+  <br><br>
+  <h2 id="Ch1">First Order Linear Differential Equations</h2>
+  The solution to a differential equation is a function or class of functions.<br><br>
+  <h3>Homogeneous Differential Equataions</h3> 
+  Come in the form \( \dot{y} + p(t)y = 0 \)
+  
+  <h3>Inhomogeneous Differential Equations</h3> 
+  Come in the form \( \dot{y} + p(t)y = q(t) \)
+
+  <h3>Solving First Order ODEs</h3>
+  There are many ways to solve first order linear differential equations. These are listed in order of how they should be attempted when approaching a problem.
+  <h4>Separation of variables</h4>
+  (For homogeneous ODEs)<br>
+  Separation of variables is the first method that should be attempted when approaching a problem because it is the easiest and leads to a quick and clean solution. <br>
+ <ol>
+  <li>Move all \(y\) functions to one side and functions of \(t\) to the other side.</li>
+  <li>Integrate both sides (they should both be functions of a single variable, \(y\) or \(t\)).</li>
+  <li>(If given) Plug in initial condition to solve for integrating constant and find unique solution.</li>
+ </ol>
+  \[ \dot{y} + p(t)y = 0 \] 
+  \[ \dot{y} = -p(t)y \]
+  \[ \frac{\dot{y}}{y} = -p(t) \]
+  \[ \int \frac{1}{y}dy = \int p(t) dt \]
+  \[ ln(y) = P(t)+C \]
+  \[ y = e^{P(t)+C} \]
+  \[ y = e^{P(t)}e^C \]
+  \[ y = Ce^{P(t)} \]
+
+  <h4>Superposition</h4>
+  (For inhomogeneous ODEs)<br>
+  If the general solution to the homogeneous differential equation can be found as well as a particular solution to the inhomogeneous equation, the two can be added together to get the general solution to the inhomogeneous differential equation.
+
+  <h4>Variation of parameters</h4> 
+  
+
+  <h2 id="Ch2">Second Order linear Equations</h2>
+  <h2 id="Ch3">Laplace Transform</h2>
+
 	<br><br>
       November 30, 2017
       <br>
