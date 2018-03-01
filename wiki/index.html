@@ -11,12 +11,13 @@
 <div class="text">
   <h1>Wiki Home</h1>
   <br>
-  <a href="./class_notes/class_notes.html">Class notes</a><br>
-  <a href="./build_log/build_log.html">Robot build log</a><br>
+  <h3><a href="./class_notes/class_notes.html" class="chapter">Class notes</a></h3>
+  <h3><a href="./build_log/build_log.html" class="chapter">Robot build log</a></h3>
   <h3><a href="#Ch1" class="chapter">Motors/Motor Control</a></h3>
   <h3><a href="#Ch2" class="chapter">Mechanical Design</a></h3>
   <h3><a href="#Ch3" class="chapter">Fabrication</a></h3>
   <h3><a href="#Ch4" class="chapter">Control</a></h3>
+  <h3><a href="#Ch5" class="chapter">Research</a></h3>
   <br><br>
   <h2 id="Ch1">Motors/Motor Control</h2>
   <h3>Selecting a motor</h3>
@@ -30,16 +31,16 @@
       </tr>
   </table>
   <br><br>
-  The name of the motor is "GM6808D Hollow Shaft 12.7mm Brushless Gimbal Motor" where the 6808 corresponds to an airgap diameter of 68mm and a height of 8mm (the airgap is the space between the rotor and the stator). 
+  The name of the motor is "GM6808D Hollow Shaft 12.7mm Brushless Gimbal Motor" where the 6808 corresponds to an airgap diameter of 68mm and a height of 8mm (the airgap is the space between the rotor and the stator).
   <br><br>
-  <b>Torque (\(\tau\))</b> is proportional to the height of the motor and the radius squared, this is why pancake motors are more torque dense than machines of other shapes.<br><br> 
+  <b>Torque (\(\tau\))</b> is proportional to the height of the motor and the radius squared, this is why pancake motors are more torque dense than machines of other shapes.<br><br>
   Many motor vendors dont list the torque that a motor can produce. Motors of similar design will have a similar torque density \( \tau_d\)
   \[ \tau_d = \frac{\tau}{A_{ag} \cdot r_{ag}}\]
   Where \( A_{ag} \) is the surface area at the airgap and \( r_{ag} \) is the radius at the airgap. \( \tau_d\) can be used to approximate the torque of a given motor based on the known torque of a motor of similar design.<br><br>
-  An 8608 pancake motor that can produce a peak torque of approximately 3Nm would have a \( \tau_d \) equal to 
+  An 8608 pancake motor that can produce a peak torque of approximately 3Nm would have a \( \tau_d \) equal to
   \[ \tau_d = \frac{3Nm}{\pi \cdot 0.86m \cdot 0.08m \cdot 0.43m} = 135.2 \frac{Nm}{m^3} \]
   We could then multiply \(\tau_d\) by \(A_{ag} \cdot r_{ag}\) of a new motor to get a peak torque estimate for a new motor.<br><br><br>
-  <b>Voltage constant (\(K_V\))</b> describes how the motor spins in relation to voltage provided, it has the units \(\frac{rpm}{V}\).<br> 
+  <b>Voltage constant (\(K_V\))</b> describes how the motor spins in relation to voltage provided, it has the units \(\frac{rpm}{V}\).<br>
   <b>Torque constant (\(K_T\))</b> describes how much torque the motor produces per amp of current provided, it has the units \(\frac{Nm}{amp}\).<br><br>
   The voltage and torque constant are related as follows
   \[ K_T = \frac{60}{2\pi K_V} \]
@@ -54,13 +55,25 @@
   RC vehicle motors (generally quadcopters and helicopters) are usually designed to have high voltage constants in order to get more rpm and more lift.
   <h2 id="Ch2">Mechanical Design</h2>
   <h3>Fusing</h3>
-  <b>Mechanical fusing:</b> when one part of an assembly is specifically designed to fail first and at a known load. Mechanical fusing can be used to ensure that cheap, easily replaceable parts fail before expensive or hard to replace parts.<br><br> 
+  <b>Mechanical fusing:</b> when one part of an assembly is specifically designed to fail first and at a known load. Mechanical fusing can be used to ensure that cheap, easily replaceable parts fail before expensive or hard to replace parts.<br><br>
   <b>Clutching:</b> is a nondestructive form of mechanical fusing where at a known load, slipping occurs to prevent failure. When the load is reduced below the threshold the slipping stops.
   <h2 id="Ch3">Fabrication</h2>
   <h3 id="Tolerances">Tolerances</h3>
   <b>3D printer</b>: holes will shrink in diameter by 0.254mm (0.01in). Add 0.127mm (0.005in) in tolerance for a good press fit.
   <h2 id="Ch4">Control</h2>
+  <h2 id="Ch5">Research</h2>
+  <h3>BEX</h3>
+  <b>Mechanical/design</b> <br>
+  - Use of body as reaction mass for jumping and aerial control (flip).<br>
 
+  <br><br>
+  <b>Controls</b><br>
+  - Use of body as flywheel/reaction mass for balancing.<br>
+
+  <br><br>
+  <b>Sensing/Learning</b><br>
+  - Learning model error/disturbance distribution in Kalman filter.<br>
+  - Best kinds of disturbance distribution? Monte-carlo estimation?
 	<br><br>
       January 7, 2017
       <br>
