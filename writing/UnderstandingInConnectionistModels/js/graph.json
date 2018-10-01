@@ -1,9 +1,0 @@
-{
-  "nodes": [
-    {"label": "0", "layer": 1},
-    {"label": "1", "layer": 1},
-    {"label": "3", "layer": 1},
-    {"label": "4", "layer": 1},
-    {"label": "5", "layer": 2}
-  ]
-}
