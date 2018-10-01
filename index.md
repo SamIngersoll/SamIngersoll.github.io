@@ -1,13 +1,10 @@
-## This is a website
+---
+layout: post
+title:  "Welcome to Jekyll!"
+---
 
-This is the real thing
+# Welcome
 
-```website ++```
+**Hello world**, this is my first Jekyll blog post.
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul><Paste>
+I hope you like it!
