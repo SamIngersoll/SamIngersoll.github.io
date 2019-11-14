@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <title>
+  // blog
+  </title>
+	<head>
+    <link rel="stylesheet" type="text/css" href="./blog_style.css">
+	</head>
+	<body>
+    <div class="header">
+     &#x2699; Cruft City Express &#x2699;
+    </div>
+    <div class="post" class="manufacturing">
+      <div class="post_title">
+        Heat bending polycarbonate
+      </div>
+      <div class="maintext">
+        Recently I used a heat gun to bent some 1/16" polycarbonate. I was trying to avoid the bubbling that is characteristic of bad heat bent plastic. I found that 112&#176; F softened the polycarb enough that it could be bent over a form, but didn't cause bubbling. I used aluminum round stock as my form, heating up the aluminum helped warm the polycarb more evenly and made for happier bending.
+        <div class="date">October 31, 2019</div>
+      </div>
+    </div>
+    <div class="post" class="manufacturing">
+      <div class="post_title">
+        Pendulum Energy Shaping + LQR
+      </div>
+      <div class="maintext">
+        A simple example in Russ Tedrake's Underactuated Robotics notes is the pendulum swing up using energy shaping and stabilization using LQR. I'd heard a lot about LQR and the pendulum seemed like the right place to start.
+        <br><br>
+        Setting up this controller helped me understand how state space works a little better. Interestingly, euclidian distance in state space often is not useful. As an example, multiple trajectories of the pendulum may be right next to each other in state space, but it may be impossible to get from one to the other.
+        Here are some trajectories in pendulum state space:
+        <table style="width:100%">
+          <tr>
+            <th>
+              <img src="./posts/pendulum/state_space_2pend.gif" width="100%"></img>
+              State space trajectories of initial conditions on either side of unstable upright equilibrium.
+            </th>
+            <th>
+              <img src="./posts/pendulum/saddle.png" width="80%"></img><br>
+              Some state trajectories, helps illustrate the structure of the space.
+            </th>
+          </tr>
+        </table>
+        <br>
+        Obligatory swing up and stabilize gif:
+        <img src="./posts/pendulum/swing_up.gif" width="80%"></img> <br>
+        The red line in the left plot is actuator torque and the black line is angle.
+        <br><br>
+        For this project I found the following resources helpful: <br>
+        <ul>
+          <li>
+            Controls: Russ Tedrake's <a href="http://underactuated.mit.edu/underactuated.html?chapter=lqr">Underactuated Robotics notes on LQR</a><br>
+          </li>
+          <li>
+            Plotting: Matthew Keller's <a href="https://github.com/MatthewPeterKelly/dscTutorials/tree/master/LagrangeMechanics/singlePendulum">pendulum simulation</a>
+          </li>
+        </ul>
+        <div class="date">October 14, 2018</div>
+      </div>
+    </div>
+    <div class="post" class="manufacturing">
+      <div class="post_title">
+        Tolerances for 3D printing
+      </div>
+      <div class="maintext">
+        When designing press fits for 3D printed parts, add approximately 0.127 mm (0.005 in) to the diameter of holes to account for shrinkage.
+        <div class="date">March 6, 2018</div>
+      </div>
+    </div>
+	</body>
+</html>
