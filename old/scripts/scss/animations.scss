@@ -1,0 +1,67 @@
+.spin {
+  animation-name: spinAnim;
+  animation-duration: .5s;
+  -webkit-transform: rotate(45deg) translate(0px, 0px);
+  text-shadow: -5px 10px 10px rgba(0, 0, 0, .5);
+}
+.unspin {
+  animation-name: unSpinAnim;
+  animation-duration: .5s;
+}
+.raise {
+  animation-name: raiseAnim;
+  animation-duration: .5s;
+  -webkit-transform: translate(-10px, -10px);
+  text-shadow: -5px 10px 10px rgba(0, 0, 0, .5);
+}
+.unraise {
+  animation-name: unRaiseAnim;
+  animation-duration: .5s;
+}
+
+/////////////////
+// Definitions //
+/////////////////
+
+@-webkit-keyframes spinAnim {
+    0% {    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            // color: rgb(255,255,255);
+            text-shadow: -0px 0px 0px rgba(0, 0, 0, .5); }
+    // 5% {    color: rgb(255,0,100); }
+    100% {  -webkit-transform: rotate(45deg) translate(0px, 0px);
+            // color: rgb(255,255,255);
+            text-shadow: -5px 10px 10px rgba(0, 0, 0, .5); }
+}
+@-webkit-keyframes unSpinAnim {
+    0% {    -webkit-transform: rotate(45deg) translate(0px, 0px);
+            // color: rgb(255,255,255);
+            text-shadow: -5px 10px 10px rgba(0, 0, 0, .5); }
+    // 5% {    color: rgb(255,100,0); }
+    100% {  -webkit-transform: rotate(0deg) translate(0px, 0px);
+            // color: rgb(255,255,255);
+            text-shadow: -0px 0px 0px rgba(0, 0, 0, .5);}
+}
+@-webkit-keyframes raiseAnim {
+    0% {    -webkit-transform: translate(0px, 0px);
+            text-shadow: -0px 0px 0px rgba(0, 0, 0, .5); }
+    100% {  -webkit-transform: translate(-10px, -10px);
+            text-shadow: -5px 10px 10px rgba(0, 0, 0, .5); }
+}
+@-webkit-keyframes unRaiseAnim {
+    0% {    -webkit-transform: translate(-10px, -10px);
+            text-shadow: -5px 10px 10px rgba(0, 0, 0, .5);}
+    100% {  -webkit-transform: translate(0px, 0px);
+            text-shadow: -0px 0px 0px rgba(0, 0, 0, .5);}
+}
+@-webkit-keyframes slideIn {
+    0% {    -webkit-transform: translate(0px, -10px);
+            opacity: 0;}
+    100% {  -webkit-transform: translate(0px, 0px);
+            opacity: 1;}
+}
+@-webkit-keyframes slideOut {
+    0% {    -webkit-transform: translate(0px, 0px);
+            opacity: 1;}
+    100% {  -webkit-transform: translate(0px, -10px);
+            opacity: 0;}
+}

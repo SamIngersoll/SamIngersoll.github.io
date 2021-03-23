@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-23T10:28:07-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Cruft City Express ⚙</title><entry><title type="html">AE-1 Repair</title><link href="http://localhost:4000/AE-1_repair/" rel="alternate" type="text/html" title="AE-1 Repair" /><published>2021-01-16T00:00:00-05:00</published><updated>2021-01-16T00:00:00-05:00</updated><id>http://localhost:4000/AE-1_repair</id><content type="html" xml:base="http://localhost:4000/AE-1_repair/">&lt;p&gt;Right at the beginning of the pandemic, Theo gave me this &lt;a href=&quot;https://en.wikipedia.org/wiki/Canon_AE-1&quot;&gt;Canon AE-1&lt;/a&gt; with a really nice Tamron Adaptall 35-80mm lens and a stuck shutter.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_repair/hero.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After removing the bottom panel, the shutter could be mechanically released by pushing the small trapezoidal magnet (under the clear plastic cover) away from the electromagnet. This meant that the camera was mechanically sound.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_repair/bottom.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So the next place to look was at the shutter electronics which are all on the gold flex pcb to the left of the electromagnet. After undoing the bolt constraining the flex and freeing the electromagnet from its housing, it was clear that something was missing. A component had fallen off the board. Just below the resistor in the following picture you can see the two well-aged leads of a through-hole component conspicuously disconnected.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_repair/missing_diode.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The repair manual informed me that this was supposed to be a diode, so I bought one and soldered it on.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_repair/fresh_diode.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The repair manual is surprisingly well written and relatively comprehensive. It includes the following diagram of the shutter electronics which shows that the diode is used to charge up capacitor c47. The capacitor can then be discharged through the windings of Mg2, pushing the shutter magnet away from the coils. The lack of diode had been preventing the cap from charging.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_repair/shutter_circuit_diagram.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Even with the fresh diode in place, the shutter electronics still failed to release when the trigger was pressed. After probing a couple of the components on the flex, I found a that the windings around the magnet Mg2 had broken. I desoldered the magnet and hoped that the break wasn’t somewhere deep in the coil.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_repair/magnet_fixed.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Indeed, after some searching the break was visible. Soldering the magnet wire took a few tries. It is hair thin and coated in enamel to prevent shorts. The internet suggested burning the enamel off with a lighter, but the wire was so thin that it burned just as quickly as the enamel did. The eventual solution was to pass a hot soldering iron across the wire a few times to remove the enamel. The solder joint is at the upper left of the coil in the image above.&lt;/p&gt;
+
+&lt;p&gt;With the coils conducting and the magnet back in place, the shutter finally fired. When I put the bottom cover back on the camera, the shutter stopped firing. After some searching, it turns out that the leads on my new diode were a little bit too long and the bottom cover was causing them to short to the camera body. After trimming the stray leads, the camera was ready to take some pictures.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/dDPwm8bHLXM&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Here are a couple of the pictures Eleanor took with Portra 400 film.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_repair/000024660009.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;img src=&quot;/images/ae-1_repair/000024660016.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;img src=&quot;/images/ae-1_repair/000024660031.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;img src=&quot;/images/ae-1_repair/000024660019.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Right at the beginning of the pandemic, Theo gave me this Canon AE-1 with a really nice Tamron Adaptall 35-80mm lens and a stuck shutter.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/ae-1_repair/hero.jpg" /><media:content medium="image" url="http://localhost:4000/ae-1_repair/hero.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

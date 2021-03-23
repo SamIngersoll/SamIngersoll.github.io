@@ -1,0 +1,48 @@
+//
+@import "animations";
+@import "classes";
+
+@media screen and (orientation:portrait) {}
+@media screen and (orientation:landscape) {}
+#s {
+  @extend .headerText;
+  padding-left: 75px;
+}
+#plus {
+  @extend .headerText;
+  padding-left: 0px;
+  left: 290px;
+  font-size: 120pt;
+}
+#background1 {
+  @extend .background;
+  top:0px;
+  background-image: url("../../pictures/lancia/LanciaStratosZero_grey.png");
+}
+#background5 {
+  @extend .background;
+  top:100%;
+  background-image: url("../../pictures/cheetah/cheetah.jpg");
+}
+#background2 {
+  @extend .background;
+  top:200%;
+  background-image: url("../../pictures/eggs/eggs.jpg");
+}
+#background3 {
+  @extend .background;
+  top:300%;
+  background-image: url("../../pictures/tremor/tremor_blue.jpg");
+}
+#background4 {
+  @extend .background;
+  top:400%;
+  background-image: url("../../pictures/neurons/Neurons_Sil_Black.jpg");
+}
+
+video {
+  @extend .background;
+  &::-webkit-media-controls { display:none !important; }
+  &::-webkit-media-controls-start-playback-button { display: none!important;
+                                                      -webkit-appearance: none;}
+}

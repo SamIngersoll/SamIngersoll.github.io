@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AE-1 Repair – Cruft City Express ⚙ – </title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Right at the beginning of the pandemic, Theo gave me this Canon AE-1 with a really nice Tamron Adaptall 35-80mm lens and a stuck shutter.
+
+" />
+    <meta property="og:description" content="Right at the beginning of the pandemic, Theo gave me this Canon AE-1 with a really nice Tamron Adaptall 35-80mm lens and a stuck shutter.
+
+" />
+    
+    <meta name="author" content="Cruft City Express ⚙" />
+
+    
+    <meta property="og:title" content="AE-1 Repair" />
+    <meta property="twitter:title" content="AE-1 Repair" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Cruft City Express ⚙ - " href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/eye.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Cruft City Express ⚙</a></h1>
+            <p class="site-description"></p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>AE-1 Repair</h1>
+
+  <div class="entry">
+    <p>Right at the beginning of the pandemic, Theo gave me this <a href="https://en.wikipedia.org/wiki/Canon_AE-1">Canon AE-1</a> with a really nice Tamron Adaptall 35-80mm lens and a stuck shutter.</p>
+
+<p><img src="/images/ae-1_repair/hero.jpg" alt="_config.yml" /></p>
+
+<p>After removing the bottom panel, the shutter could be mechanically released by pushing the small trapezoidal magnet (under the clear plastic cover) away from the electromagnet. This meant that the camera was mechanically sound.</p>
+
+<p><img src="/images/ae-1_repair/bottom.jpg" alt="_config.yml" /></p>
+
+<p>So the next place to look was at the shutter electronics which are all on the gold flex pcb to the left of the electromagnet. After undoing the bolt constraining the flex and freeing the electromagnet from its housing, it was clear that something was missing. A component had fallen off the board. Just below the resistor in the following picture you can see the two well-aged leads of a through-hole component conspicuously disconnected.</p>
+
+<p><img src="/images/ae-1_repair/missing_diode.jpg" alt="_config.yml" /></p>
+
+<p>The repair manual informed me that this was supposed to be a diode, so I bought one and soldered it on.</p>
+
+<p><img src="/images/ae-1_repair/fresh_diode.jpg" alt="_config.yml" /></p>
+
+<p>The repair manual is surprisingly well written and relatively comprehensive. It includes the following diagram of the shutter electronics which shows that the diode is used to charge up capacitor c47. The capacitor can then be discharged through the windings of Mg2, pushing the shutter magnet away from the coils. The lack of diode had been preventing the cap from charging.</p>
+
+<p><img src="/images/ae-1_repair/shutter_circuit_diagram.png" alt="_config.yml" /></p>
+
+<p>Even with the fresh diode in place, the shutter electronics still failed to release when the trigger was pressed. After probing a couple of the components on the flex, I found a that the windings around the magnet Mg2 had broken. I desoldered the magnet and hoped that the break wasn’t somewhere deep in the coil.</p>
+
+<p><img src="/images/ae-1_repair/magnet_fixed.jpg" alt="_config.yml" /></p>
+
+<p>Indeed, after some searching the break was visible. Soldering the magnet wire took a few tries. It is hair thin and coated in enamel to prevent shorts. The internet suggested burning the enamel off with a lighter, but the wire was so thin that it burned just as quickly as the enamel did. The eventual solution was to pass a hot soldering iron across the wire a few times to remove the enamel. The solder joint is at the upper left of the coil in the image above.</p>
+
+<p>With the coils conducting and the magnet back in place, the shutter finally fired. When I put the bottom cover back on the camera, the shutter stopped firing. After some searching, it turns out that the leads on my new diode were a little bit too long and the bottom cover was causing them to short to the camera body. After trimming the stray leads, the camera was ready to take some pictures.</p>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dDPwm8bHLXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Here are a couple of the pictures Eleanor took with Portra 400 film.</p>
+
+<p><img src="/images/ae-1_repair/000024660009.jpg" alt="_config.yml" />
+<img src="/images/ae-1_repair/000024660016.jpg" alt="_config.yml" />
+<img src="/images/ae-1_repair/000024660031.jpg" alt="_config.yml" />
+<img src="/images/ae-1_repair/000024660019.jpg" alt="_config.yml" /></p>
+
+  </div>
+
+  <div class="date">
+    Written on January 16, 2021
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

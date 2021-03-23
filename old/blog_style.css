@@ -1,0 +1,39 @@
+.header {
+  font-size: 100px;
+  font-family: Helvetica;
+  font-weight: 900;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.post_title {
+font-size: 50px;
+font-family: Helvetica;
+font-weight: 900;
+padding-left: 25px;
+padding-top: 30px;
+}
+
+.maintext {
+  font-size: 15px;
+  font-family: Helvetica;
+  font-weight: normal;
+  width: 60%;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+th {
+  font-size: 15px;
+  font-family: Helvetica;
+  font-weight: normal;
+}
+
+
+.date {
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+body {
+  padding-bottom: 150px;
+}
