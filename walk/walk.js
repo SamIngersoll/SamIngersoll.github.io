@@ -6,7 +6,6 @@
 // 20 10pm
 // 24 midnight
 
-
 // from conservatory
 var conservatory_paths =  [ {"newLocation":"A Forest Path", "text":"> Exit through the front door and walk down the narrow path into the forest..."},
                             {"newLocation":"The Aviary", "text":"> Walk behind the conservatory to the aviary..."} ];
@@ -24,7 +23,9 @@ var aviary_paths =        [ {"newLocation":"The Meadow", "text":"> Take the path
                             {"newLocation":"The Conservatory", "text":"> Walk around to the front of the conservatory..."} ];
 
 
-
+setInterval(function () {
+    run();
+}, 600000);
 
 
 function run() {
@@ -52,12 +53,10 @@ function run() {
 
   }
 
-  // console.log(story)
   for (var setting in story) {
     if (story.hasOwnProperty(setting)) {
       var thisSetting = story[setting];
       for (const [key, value] of Object.entries(thisSetting)) {
-        // console.log(key, value);
         // if current hour is between start and end
         if (value.start <= current && value.end >= current) {
           addEvent(value.text)
@@ -75,10 +74,7 @@ function run() {
 
   var paths_div = document.getElementById('paths');
   for (var i = 0; i < paths.length ; i++) {
-    console.log(paths[i])
     path = paths[i];
-    console.log(path.newLocation);
-    console.log(path.text);
     var div = document.createElement('p');
     div.innerHTML = path.text;
     div.setAttribute("onclick","change_location('"+path.newLocation+"')");
@@ -87,13 +83,18 @@ function run() {
 }
 
 function clear_narrative() {
+
   var narrative = document.getElementById('narrative');
-  while (narrative.firstChild) {
-    narrative.removeChild(narrative.firstChild);
+  if (narrative.firstChild != null) {
+    while (narrative.firstChild) {
+      narrative.removeChild(narrative.firstChild);
+    }
   }
   var paths_div = document.getElementById('paths');
-  while (paths_div.firstChild) {
-    paths_div.removeChild(paths_div.firstChild);
+  if (paths_div.firstChild != null) {
+    while (paths_div.firstChild) {
+      paths_div.removeChild(paths_div.firstChild);
+    }
   }
 }
 
