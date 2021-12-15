@@ -1,0 +1,28 @@
+var forest_path = [{
+"forest_path_dawn": [
+              {"start":  4, "end":  7, "text": "Mist flows slowly over the stream, mirroring the motion of the water in sublime, otherworldly slowness."},
+              {"start":  4, "end":  7, "text": "Rivulets and eddies of mist flow through the rocks, dense with moss. "},
+              {"start":  3, "end": 7, "text": "A delicate Kármán vortex street of mist precesses from the protruding roots of an ancient birch. Roots ball exposed like a tiny cathedral by slow erosion from the tiny stream."},
+              {"start":  2, "end":  9, "text": "A spider’s web stretches long over the stream, its intricate weaving gilded and shining with morning mist."},
+              {"start":  5, "end": 7, "text": "The peeling paper bark of the birches is blue and flat in the pre-dawn light."} ],
+
+"forest_path_noon": [
+              {"start":  9, "end":  16, "text": "The forest bustles, it would be hot but for the coolness of the brook."},
+              {"start":  7, "end":  18, "text": "A small fish jumps for an insect, disturbing the pristine surface of the pool. It darts back under cover of a large rock."},
+              {"start":  7, "end":  19, "text": "Mushrooms populate the shady regions, polypores stud a stump, already beginning to decompose."},
+              {"start":  10, "end": 16, "text": "Tiny insects fly lazily in the hot sun, their slow flight makes the air look like syrup flowing between the tall white trees. "} ],
+
+"forest_path_sunset": [
+              {"start":  14, "end":  21, "text": "The cicadas hum in the background, their drone just audible from the fields surrounding the grove."},
+              {"start":  13, "end":  18, "text": "The quiet bubbling of the brook blends with the happy chirping of the forest birds and the busy hum of small insects flying a brownian path above the flowing water."},
+              {"start":  16, "end": 19, "text": "Gold light splits in rays down through to the forest floor. The rays dance across the floor in the breeze, gilding the birch paper."},
+              {"start":  18, "end": 22, "text": "A family of raccoons navigates a crossing of the brook, the mother waits until each tiny kit has made the final jump. They trundle off towards the meadow for the day."} ],
+
+"forest_path_night": [
+              {"start":  22, "end":  3, "text": "Little bright eyes peak out from thicket of birches. Then disappear with a quiet, hurried rustle."},
+              {"start":  22, "end":  4, "text": "Moonlight filters down through the still leaves, dappling the forest floor in pale blues and grays. The forest is a beautiful silent monochrome."},
+              {"start":  23, "end": 4, "text": "Papery bark coats the ground, brilliant white under the moon."},
+              {"start":  21, "end":  5, "text": "The only sounds are the trickle of the brook between the dark mossy rocks and the quiet patter of small feet across the soft forest floor."},
+              {"start": 21, "end":  4, "text": "No insects fly under the branches. The spider is still in its web. It seems the whole forest is asleep except for the worms – for whom it is always night – and the little bright eyes flicking too and fro in the dark."} ]
+
+}];

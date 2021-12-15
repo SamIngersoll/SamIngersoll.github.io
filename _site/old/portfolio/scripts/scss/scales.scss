@@ -1,0 +1,21 @@
+@import "classes";
+
+#maintext {
+  @extend .text;
+}
+#s {
+  @extend .headerText;
+}
+#background1 {
+  @extend .background;
+  top:0px;
+  background-image: url("../../pictures/scales/dragon_wheel.jpg");
+}
+#background2 {
+  @extend .background;
+  top:100%;
+  background-image: url("../../pictures/scales/scales_print.jpg");
+}
+#maintext {
+  padding-top: 70vh;
+}

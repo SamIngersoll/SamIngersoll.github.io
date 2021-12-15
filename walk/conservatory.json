@@ -1,0 +1,33 @@
+
+var conservatory = [{
+"conservatory_dawn": [
+              {"start":  4, "end":  8, "text": "Cool blue light filters through the big heavy leaves."},
+              {"start":  4, "end":  6, "text": "The crisp pre-dawn air is cold with the humidity of the conservatory."},
+              {"start":  3, "end": 12, "text": "A pillow of dense club moss emits a steady, regular pattern of heavy droplets which splash into a puddle covering most of the floor."},
+              {"start":  3, "end":  7, "text": "Outside the windows, nothing is visible through the thick morning fog."},
+              {"start": 22, "end":  6, "text": "The whole world is just the silent moss, the dripping, the flaking white painted cast iron structure, and thick glass, mottled and uneven."} ],
+
+"conservatory_noon": [
+              {"start":  8, "end": 16, "text": "Umbrella moss grows triumphant across every indoor surface."},
+              {"start":  9, "end": 17, "text": "Shining droplets adorn clusters of setae as they blanket the walls."},
+              {"start": 11, "end": 15, "text": "The waxy leaves of the conservatory’s giant inhabitants drink up the noontime sun."},
+              {"start": 10, "end": 18, "text": "Rays split through the foggy windows, shining down in blinding beams onto the loamy black ground."},
+              {"start":  8, "end": 16, "text": "The plants stand tall and thick, like pillars in this great nave, they spread wide, great leaves thick and opaque to the bright light."} ],
+
+"conservatory_sunset": [
+              {"start": 15, "end": 24, "text": "Umbrella moss grows triumphant across every indoor surface."},
+              {"start": 16, "end": 19, "text": "Golden light flashes off the thick panes of glass."},
+              {"start": 18, "end": 20, "text": "White paint peels on the curving wrought iron structure."},
+              {"start": 10, "end": 18, "text": "Droplets of condensation flash brilliantly in the warm light."},
+              {"start": 16, "end": 19, "text": "Pinks and oranges filter through from the clouds outside, they splash across the huge, heavy, dark leaves and against the soft deep moss blanketing the floor."},
+              {"start": 17, "end": 19, "text": "The curved metal structure with bare windows, lit in technicolor by the sunset are the stained glass of this cathedral of plants. "},
+              {"start": 14, "end": 19, "text": "The mosses and lichens and rust, the peeling paint, all illuminated by the sunset light form the fresco decorating the its vault. "} ],
+
+"conservatory_night": [
+              {"start": 22, "end": 3, "text": "The big leaves are unnaturally still and deep black under the reflected moonlight."},
+              {"start": 21, "end": 4, "text": "There is no wind inside the conservatory, nothing moves in the night."},
+              {"start": 20, "end": 4, "text": "The darkness is nearly complete under the cover of the big leaves."},
+              {"start": 19, "end": 5, "text": "The sky visible beyond them is only one shade brighter than the great darkness on the mossy ground."},
+              {"start": 20, "end": 5, "text": "Stars are visible only as a blurry wash, smeared by the condensation on the sagging, ancient glass."},
+              {"start": 18, "end": 6, "text": "There are no sounds except for the occasional drip from the mossy ceiling high above. The drop is caught by a huge leaf, flowing to the trunk of the great plant and to the wet mossy ground."} ]
+          }];

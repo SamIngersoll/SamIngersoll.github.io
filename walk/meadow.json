@@ -1,0 +1,36 @@
+var meadow = [{
+"meadow_dawn": [
+              {"start":  4, "end":  8, "text": "Blues and gray grasses blanket the sleeping meadow, patches of wildflowers adorn the hill."},
+              {"start":  4, "end": 14, "text": "Crumbling stonework from the foundation of an old barn shelter mosses and tufts of grasses and bluebells."},
+              {"start":  3, "end": 16, "text": "The dead tree atop the hill is bleached white and skeletal and ancient. Only the big branches remain, heavy under the weight of the kudzu."},
+              {"start":  3, "end":  7, "text": "A thick fog lies in the lowland around the hill, blanketing the quiet meadow with early morning science."},
+              {"start":  4, "end":  6, "text": "All colors faded to a cool blue in the pre-dawn light."},
+              {"start":  2, "end":  6, "text": "Tiny droplets weigh the grass and flowers, sparkling silently."},
+              {"start":  4, "end": 16, "text": "A low jumble of stone from an old property line has been engulfed by ivy."},
+              {"start":  2, "end":  18, "text": "The top of a decrepit wooden fence barely escape the tall grasses."} ],
+
+"meadow_noon": [
+              {"start":  8, "end": 14, "text": "A hummingbird buries its delicate body in the largest floret of a gracefully bowing foxglove. It rustles joyfully before disappearing to another flower in a flash of emerald."},
+              {"start":  9, "end": 16, "text": "Fat bees bumble dutifully from flower to flower."},
+              {"start":  9, "end": 16, "text": "The warm, humid air is full with the sound of happy pollinating."},
+              {"start":  7, "end": 20, "text": "The sloping green meadow is scattered with clustered wildflowers and the remains of a wooden fence consumed by the brilliant greenery."},
+              {"start":  7, "end": 20, "text": "A hawk calls from its circling path, high above."},
+              {"start": 11, "end": 15, "text": "The grass and wildflower shine blinding green and red and purple in the noonday sun. Blending together into the bright color of spirited growth."},
+              {"start": 11, "end": 18, "text": "A furry snout peaks out from behind a stump, nose alive following a path towards honey."} ],
+
+"meadow_sunset": [
+              {"start": 18, "end": 20, "text": "Cicadas drone as the light fades. The thirteen year brood came to the surface this summer and their collective buzz is bright and full of urgency."},
+              {"start": 11, "end": 19, "text": "A harvest mouse tucks itself into a tulip, eyes shining and body covered thick with pollen."},
+              {"start": 14, "end": 19, "text": "Gold light plays among the gently swaying blooms."},
+              {"start":  9, "end": 20, "text": "Sturdy grass grows dense and deep around lichened fenceposts."},
+              {"start": 17, "end": 19, "text": "Over the meadow hill, the woody wall of the birch grove was dark with the coming night."},
+              {"start": 17, "end": 21, "text": "Swallows trace long arcing paths across the horizon in their vespertine wheeling."}],
+
+"meadow_night": [
+              {"start": 21, "end":  4, "text": "The clear night air is full of the staccato fiddling of crickets as they share news from the day and make plans for the night."},
+              {"start": 21, "end":  5, "text": "The meadow is still, just the sounds of the insects and the occasional sorrowful hoot of a barn owl."},
+              {"start": 18, "end":  3, "text": "Bats click and flutter as they dive through the darkness."},
+              {"start": 20, "end":  3, "text": "The dead tree stands like a great guardian over the meadow. Its beard of kudzu hanging low, blending into the darkness of the ground."},
+              {"start": 20, "end":  3, "text": "Broken wood like ribs protrude above the dark, dense vegetation."} ]
+
+}];

@@ -1,0 +1,28 @@
+var aviary = [{
+"aviary_dawn": [
+              {"start":  20, "end":  5, "text": "The birds were asleep, huddled in the rookery. A robust clapboarded structure that used to be bright red."},
+              {"start":  19, "end":  6, "text": "The chickens are quiet in the coop. White spots dot the shingles from the pigeons in the rookery above."},
+              {"start":  3, "end": 12, "text": "A rusty pail is filled with dirty water from the last rain."},
+              {"start":  4, "end":  9, "text": "The ground is bare around the coop, picked clean by the birds. Sunflower seed husks dot the area around the coop."},
+              {"start":  4, "end":  7, "text": "The rooster calls from beside the coop. It has been a chilly night."},
+              {"start":  4, "end":  7, "text": "Behind the coop, the meadow blurry with heavy blue morning fog."} ],
+
+"aviary_noon": [
+              {"start":  8, "end":  16, "text": "The pigeons spontaneously burst into collective flight as they do on a whim, wings beating the air."},
+              {"start":  8, "end":  20, "text": "A downy bit of fluff floats down from the chaos, slowly as if underwater, tossed by unseen currents."},
+              {"start":  9, "end": 17, "text": "The chickens sprint back and forth on their business, searching for grubs and unlucky worms around the perimeter of the coop."},
+              {"start":  11, "end":  16, "text": "The bare dirt of the run is made dusty by the heat of the midday sun and it blows around the coop, flying up in little clouds around the feet of the running birds."} ],
+
+"aviary_sunset": [
+              {"start":  16, "end":  21, "text": "Pigeons take up the duty of cooing the days news."},
+              {"start":  17, "end":  22, "text": "A businesslike rustling emanates from the high coop as the birds negotiate their position on the perch."},
+              {"start":  17, "end": 19, "text": "The cracking paint of the coop’s clapboards is bright red in the light of the setting sun. "},
+              {"start":  17, "end":  19, "text": "Pink and orange clouds pillow across the sunset, painting the chickens and ducks pastel."} ],
+
+"aviary_night": [
+              {"start":  22, "end":  4, "text": "There are no sounds here but the occasional rustle of a bird adjusting to a more cozy part of the roost."},
+              {"start":  22, "end":  4, "text": "The moonlight casts a dark shadow in front of the coop and across the dusty ground. "},
+              {"start":  19, "end": 3, "text": "There is no movement except the slow growing of the grass. No insect dares enter this area, even when the birds are asleep. "},
+              {"start":  19, "end":  3, "text": "An owl hoots in the distance, but the birds do not awaken. Their shelter gives them confidence and they remain asleep."},
+              {"start": 20, "end":  2, "text": "A silent breeze waves blades of grass around the edge of the clearing in the bright moonlight of midnight."} ]
+}];

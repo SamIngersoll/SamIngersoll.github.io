@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-23T10:28:07-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Cruft City Express ⚙</title><entry><title type="html">AE-1 Repair</title><link href="http://localhost:4000/AE-1_repair/" rel="alternate" type="text/html" title="AE-1 Repair" /><published>2021-01-16T00:00:00-05:00</published><updated>2021-01-16T00:00:00-05:00</updated><id>http://localhost:4000/AE-1_repair</id><content type="html" xml:base="http://localhost:4000/AE-1_repair/">&lt;p&gt;Right at the beginning of the pandemic, Theo gave me this &lt;a href=&quot;https://en.wikipedia.org/wiki/Canon_AE-1&quot;&gt;Canon AE-1&lt;/a&gt; with a really nice Tamron Adaptall 35-80mm lens and a stuck shutter.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-23T13:47:01-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Cruft City Express</title><subtitle>⚙ ⚙ ⚙</subtitle><entry><title type="html">AE-1 and the Mystery Lenses</title><link href="http://localhost:4000/AE-1_strange_lenses/" rel="alternate" type="text/html" title="AE-1 and the Mystery Lenses" /><published>2021-02-20T00:00:00-05:00</published><updated>2021-02-20T00:00:00-05:00</updated><id>http://localhost:4000/AE-1_strange_lenses</id><content type="html" xml:base="http://localhost:4000/AE-1_strange_lenses/">&lt;p&gt;We had some strange old lenses in our attic and I was excited to try them out on the AE-1.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_mystery_lenses/funny_lenses.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;They are from left to right:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Kern-Paillard Switar 25mm&lt;/li&gt;
+  &lt;li&gt;Kern-Paillard Yvar 75mm&lt;/li&gt;
+  &lt;li&gt;Cosmicar 8.5mm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kern-Paillar started making camera lenses in 1914 and stopped making the Switar and Yvar in the 1950s. These lenses appear to be on the newer side, but still getting up there in age. So far, Eleanor has managed to make the Yvar produced some good photos. I took a couple with the Switar but haven’t gotten them developed yet. The Cosmicar has proved to be somewhat challenging so far.&lt;/p&gt;
+
+&lt;p&gt;All of the lenses above are &lt;a href=&quot;https://en.wikipedia.org/wiki/C_mount&quot;&gt;C mount&lt;/a&gt; lenses. This lens mount was developed way back in the day, Wikipedia estimates its first used to have been in 1926. The AE-1 is an &lt;a href=&quot;https://en.wikipedia.org/wiki/Canon_FD_lens_mount&quot;&gt;FD mount&lt;/a&gt; camera, so an adapter would be needed. Of course, there are no C mount lens to FD camera adapters (there are adapters that go the other way) and I can’t get into MITERS because of COVID. So this was going to be a franken-adapter situation.&lt;/p&gt;
+
+&lt;p&gt;After much googling, the adapter stackup that did the trick was an FD body to M42, then an M42 body to C mount. The M42 threads were incredibly loose, so some thread locker was needed.&lt;/p&gt;
+
+&lt;p&gt;Here is the Switar with the adapter:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_mystery_lenses/disassembled.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_mystery_lenses/assembled.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are a couple of the pictures Eleanor took with Portra 400 film and the Kern-Paillard Yvar 75mm lens.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ae-1_mystery_lenses/000052250016.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;img src=&quot;/images/ae-1_mystery_lenses/000052250017.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">We had some strange old lenses in our attic and I was excited to try them out on the AE-1.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/ae-1_mystery_lenses/funny_lenses.jpg" /><media:content medium="image" url="http://localhost:4000/ae-1_mystery_lenses/funny_lenses.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AE-1 Repair</title><link href="http://localhost:4000/AE-1_repair/" rel="alternate" type="text/html" title="AE-1 Repair" /><published>2021-01-16T00:00:00-05:00</published><updated>2021-01-16T00:00:00-05:00</updated><id>http://localhost:4000/AE-1_repair</id><content type="html" xml:base="http://localhost:4000/AE-1_repair/">&lt;p&gt;Right at the beginning of the pandemic, Theo gave me this &lt;a href=&quot;https://en.wikipedia.org/wiki/Canon_AE-1&quot;&gt;Canon AE-1&lt;/a&gt; with a really nice Tamron Adaptall 35-80mm lens and a stuck shutter.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/ae-1_repair/hero.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
 
